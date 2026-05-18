@@ -1,0 +1,143 @@
+ 
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Terms of Service – Invoice Maker</title>
+      <style>
+          body {
+              font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+              max-width: 800px;
+              margin: 0 auto;
+              padding: 24px 16px 48px;
+              color: #1a1a1a;
+              line-height: 1.7;
+              font-size: 16px;
+          }
+          h1 { font-size: 28px; margin-bottom: 4px; }
+          h2 { font-size: 20px; margin-top: 32px; margin-bottom: 8px; }
+          p, li { margin: 8px 0; }
+          ul { padding-left: 20px; }
+          .updated { color: #666; font-size: 14px; margin-bottom: 32px; }
+          a { color: #1a73e8; }
+      </style>
+  </head>
+  <body>
+
+  <h1>Terms of Service</h1>
+  <p class="updated">Last updated: May 18, 2026</p>
+
+  <p>
+      These Terms of Service ("Terms") govern your use of the <strong>Invoice Maker</strong>
+      mobile application ("App") provided by Lucian Popovici ("we", "us", or "our").
+      By downloading or using the App, you agree to be bound by these Terms.
+      If you do not agree, do not use the App.
+  </p>
+
+  <h2>1. Description of the App</h2>
+  <p>
+      Invoice Maker is a mobile application that allows you to create invoices and estimates,
+      track expenses, scan receipts using on-device OCR, and generate PDF reports.
+      All data is stored locally on your device. We do not collect, transmit, or store
+      your invoices, expenses, or business information on any server.
+  </p>
+
+  <h2>2. Eligibility</h2>
+  <p>
+      You must be at least 13 years old to use the App. By using the App, you represent
+      that you meet this requirement.
+  </p>
+
+  <h2>3. License</h2>
+  <p>
+      We grant you a limited, non-exclusive, non-transferable, revocable license to install
+      and use the App on your personal device solely for your own personal or business purposes.
+      You may not copy, modify, distribute, sell, or reverse-engineer any part of the App.
+  </p>
+
+  <h2>4. In-App Purchases and Subscriptions</h2>
+  <ul>
+      <li>The App offers optional paid features ("Pro") available through a subscription
+          purchased via the Google Play Store.</li>
+      <li>Subscription fees are charged to your Google Play account at confirmation of purchase
+          and automatically renew unless cancelled at least 24 hours before the end of the
+          current period.</li>
+      <li>You can manage or cancel your subscription at any time through your
+          Google Play account settings.</li>
+      <li>We do not offer refunds for partial subscription periods, except as required by
+          applicable law.</li>
+  </ul>
+
+  <h2>5. Your Data</h2>
+  <p>
+      All data you enter into the App (invoices, clients, expenses, etc.) is stored locally
+      on your device. We have no access to this data. You are solely responsible for backing
+      up your data. Uninstalling the App may result in permanent data loss.
+  </p>
+
+  <h2>6. Acceptable Use</h2>
+  <p>You agree not to use the App to:</p>
+  <ul>
+      <li>Violate any applicable law or regulation.</li>
+      <li>Create fraudulent invoices or misrepresent financial information.</li>
+      <li>Infringe the intellectual property rights of any third party.</li>
+  </ul>
+
+  <h2>7. Disclaimer of Warranties</h2>
+  <p>
+      The App is provided <strong>"as is"</strong> and <strong>"as available"</strong>
+      without warranties of any kind, express or implied, including but not limited to
+      warranties of merchantability, fitness for a particular purpose, or non-infringement.
+      We do not warrant that the App will be error-free, uninterrupted, or that OCR results
+      will be accurate.
+  </p>
+
+  <h2>8. Limitation of Liability</h2>
+  <p>
+      To the fullest extent permitted by law, we shall not be liable for any indirect,
+      incidental, special, or consequential damages arising out of or in connection with
+      your use of the App, including but not limited to loss of data, loss of profits,
+      or business interruption, even if we have been advised of the possibility of such damages.
+  </p>
+
+  <h2>9. Changes to These Terms</h2>
+  <p>
+      We may update these Terms from time to time. We will post the revised Terms on this page
+      with an updated date. Continued use of the App after changes are posted constitutes
+      your acceptance of the revised Terms.
+  </p>
+
+  <h2>10. Governing Law</h2>
+  <p>
+      These Terms are governed by the laws of the Province of Quebec, Canada,
+      without regard to its conflict-of-law provisions.
+  </p>
+
+  <h2>11. Contact</h2>
+  <p>
+      If you have any questions about these Terms, please contact us at:<br />
+      <a href="mailto:lucian.popovici84@gmail.com">lucian.popovici84@gmail.com</a>
+  </p>
+
+  </body>
+  </html>
+
+  Once you save this as terms_en.html in your GitHub repo, update the app:
+
+● Update(app\src\main\java\com\example\android\ui\screens\SettingsScreen.kt)
+  ⎿  Added 1 line, removed 1 line
+      504                  ListItem(headlineContent = { Text(stringResource(R.string.privacy_policy), fontWeight = FontWeight.Medium) }, leadingContent = { Icon(Icons.Fille
+           d.Edit, null, tint = adaptiveTextColor()) }, trailingContent = { Icon(Icons.Filled.ExpandMore, null) }, modifier = Modifier.clickable { showPrivacyDialog = true 
+           })
+      505                  HorizontalDivider(modifier = Modifier.padding(horizontal = 16.dp))
+      506                  ListItem(headlineContent = { Text(stringResource(R.string.terms_of_service), fontWeight = FontWeight.Medium) }, leadingContent = { Icon(Icons.Fil
+           led.Edit, null, tint = adaptiveTextColor()) }, trailingContent = { Icon(Icons.Filled.ExpandMore, null) },
+      507 -                    modifier = Modifier.clickable { val intent = Intent(Intent.ACTION_VIEW, android.net.Uri.parse("https://yourapp.com/terms")); context.startAct
+          -ivity(intent) })                                                                                                                                                 
+      507 +                    modifier = Modifier.clickable { val intent = Intent(Intent.ACTION_VIEW, android.net.Uri.parse("https://lucianospop.github.io/invoicemaker-pri
+          +vacy/terms_en.html")); context.startActivity(intent) })                                                                                                          
+      508                  HorizontalDivider(modifier = Modifier.padding(horizontal = 16.dp))
+      509                  ListItem(
+      510                      headlineContent = { Text(stringResource(R.string.app_version)) },
+
