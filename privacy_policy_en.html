@@ -3,59 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy — InvoiceMaker</title>
+    <title>Privacy Policy — North Invoice</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 24px; color: #333; line-height: 1.6; }
-        h1 { color: #1E88E5; }
-        h2 { color: #1565C0; margin-top: 32px; }
-        .updated { color: #757575; font-size: 14px; }
-        a { color: #1E88E5; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f5f5f5; color: #1a1a1a; line-height: 1.7; }
+        .container { max-width: 760px; margin: 0 auto; background: #ffffff; padding: 40px 32px; min-height: 100vh; }
+        .logo { font-size: 28px; font-weight: 800; color: #1a73e8; margin-bottom: 4px; }
+        .subtitle { font-size: 13px; color: #666; margin-bottom: 32px; }
+        h1 { font-size: 26px; font-weight: 800; margin-bottom: 6px; }
+        .meta { font-size: 12px; color: #888; margin-bottom: 28px; }
+        h2 { font-size: 16px; font-weight: 700; margin-top: 28px; margin-bottom: 8px; color: #1a1a1a; }
+        p { font-size: 14px; color: #333; margin-bottom: 10px; }
+        ul { margin: 8px 0 10px 20px; }
+        ul li { font-size: 14px; color: #333; margin-bottom: 4px; }
+        .badge { display: inline-block; background: #e8f0fe; color: #1a73e8; font-size: 11px; font-weight: 600; padding: 2px 10px; border-radius: 20px; margin-bottom: 20px; }
+        .divider { border: none; border-top: 1px solid #e0e0e0; margin: 24px 0; }
+        .contact-box { background: #f8f9fa; border-radius: 10px; padding: 16px 20px; margin-top: 8px; font-size: 13px; color: #444; }
+        @media (max-width: 600px) { .container { padding: 24px 16px; } h1 { font-size: 22px; } }
     </style>
 </head>
 <body>
+<div class="container">
+
+    <div class="logo">North Invoice</div>
+    <div class="subtitle">Privacy Policy</div>
+
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: May 8, 2026</p>
+    <div class="meta">Last updated: May 2026</div>
+    <div class="badge">PIPEDA (Canada) &nbsp;·&nbsp; CCPA (California, USA)</div>
 
-    <p>Welcome to InvoiceMaker. This Privacy Policy explains how we collect, use, and protect your information when you use our mobile application.</p>
+    <hr class="divider">
 
-    <h2>1. Information We Collect</h2>
-    <p>InvoiceMaker stores the following data <strong>locally on your device only</strong>:</p>
+    <h2>1. Who We Are</h2>
+    <p>North Invoice is a Canadian mobile application designed to help freelancers and small businesses manage invoices, expenses, estimates, clients and bookkeeping documents.</p>
+
+    <h2>2. Data Storage</h2>
+    <p>By default, all your data — invoices, expenses, client information, estimates and scanned receipts — is stored <strong>locally on your device only</strong>.</p>
+    <p>Subscribers may optionally enable <strong>Cloud Backup</strong>, which securely uploads your data to Google Firebase Storage. Your data is stored under a unique identifier tied to your Google account and is accessible only by you. No one else, including North Invoice, can access your backed-up data.</p>
+
+    <h2>3. Cloud Backup &amp; Google Sign-In</h2>
+    <p>Cloud Backup is an optional feature available to subscribers. To use it, you sign in with your Google account. We collect only your <strong>Google email address</strong>, which is used solely to identify your backup storage. We do not access your Google contacts, calendar or any other Google data.</p>
+    <p>Your backup files are stored on Google Firebase (Google LLC, USA) and are governed by <a href="https://policies.google.com/privacy" style="color:#1a73e8;">Google's Privacy Policy</a>. Backups are transmitted over an encrypted connection (HTTPS) and only on Wi-Fi.</p>
+
+    <h2>4. Information We Do Not Collect</h2>
     <ul>
-        <li>Business information (name, address, contact details)</li>
-        <li>Client information (name, address, email)</li>
-        <li>Invoices and estimates</li>
-        <li>Expenses and categories</li>
-        <li>Scanned receipts and documents</li>
-        <li>App settings and preferences</li>
+        <li>We do not collect your name, address or business information (unless you choose to back up)</li>
+        <li>We do not collect financial data entered in the app (unless you choose to back up)</li>
+        <li>We do not use analytics or tracking SDKs</li>
+        <li>We do not serve advertisements</li>
+        <li>We do not share or sell any data to third parties</li>
     </ul>
 
-    <h2>2. How We Store Your Data</h2>
-    <p>All data entered in InvoiceMaker is stored <strong>exclusively on your device</strong> using Android's local storage. We do not upload, sync, or transmit your data to any external server or cloud service.</p>
-
-    <h2>3. Camera and Storage Access</h2>
-    <p>InvoiceMaker requests access to your camera and photo gallery solely for the purpose of scanning receipts and documents. Images are stored locally on your device and are never transmitted to our servers.</p>
-
-    <h2>4. Data Sharing</h2>
-    <p>We do not sell, trade, or share your personal data with third parties. When you choose to share an invoice or expense report using the Share feature, you control what is shared and with whom.</p>
-
-    <h2>5. Data Security</h2>
-    <p>Your data is protected by your device's built-in security features. We recommend using a screen lock on your device to protect your information.</p>
+    <h2>5. Camera &amp; Storage Permissions</h2>
+    <p>Camera permission is used solely to scan receipts and documents. Receipt images are processed entirely on your device using Google ML Kit (on-device — no data is sent to Google servers). Images may be included in your cloud backup if you have enabled that feature.</p>
 
     <h2>6. Data Deletion</h2>
-    <p>You can delete your data at any time by:</p>
-    <ul>
-        <li>Deleting individual invoices, clients, or expenses within the app</li>
-        <li>Uninstalling the app, which removes all locally stored data</li>
-    </ul>
+    <p>You can delete your cloud backup at any time by signing out and contacting us at the email below. Local data can be deleted by uninstalling the app. Receipt images are automatically removed after 6 years in accordance with standard record-keeping requirements.</p>
 
-    <h2>7. Children's Privacy</h2>
-    <p>InvoiceMaker is not intended for use by children under the age of 13. We do not knowingly collect personal information from children.</p>
+    <h2>7. Subscriptions &amp; Payments</h2>
+    <p>North Invoice offers optional paid subscriptions processed entirely through Google Play Billing. We do not collect, process or store any payment or credit card information.</p>
 
-    <h2>8. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last updated" date at the top of this page.</p>
+    <h2>8. Children's Privacy</h2>
+    <p>North Invoice is intended for business use by adults. We do not knowingly collect any information from children under the age of 13.</p>
 
-    <h2>9. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-    <p><a href="mailto:privacy@invoicemaker.app">privacy@invoicemaker.app</a></p>
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be reflected in the app with an updated date.</p>
+
+    <h2>10. Your Rights (PIPEDA &amp; CCPA)</h2>
+    <p><strong>Canadian users:</strong> Under PIPEDA you have the right to access, correct or request deletion of any personal information we hold about you.</p>
+    <p><strong>California users:</strong> Under the CCPA you have the right to know what personal information is collected and the right to delete it. We do not sell personal information.</p>
+
+    <h2>11. Contact</h2>
+    <div class="contact-box">
+        <p style="margin-bottom:6px;">For privacy questions: <a href="mailto:privacy@invoicemaker.app" style="color:#1a73e8;">privacy@invoicemaker.app</a></p>
+        <p style="margin-bottom:6px;">Canadian users: We respond within 30 days (PIPEDA).</p>
+        <p style="margin-bottom:0;">California users: We respond within 45 days (CCPA).</p>
+    </div>
+
+    <hr class="divider">
+    <p style="font-size:12px; color:#aaa; text-align:center;">© 2026 North Invoice · Made in Canada 🇨🇦</p>
+
+</div>
 </body>
 </html>
