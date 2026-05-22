@@ -3,59 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Politique de Confidentialité — InvoiceMaker</title>
+    <title>Politique de confidentialité — North Invoice</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 24px; color: #333; line-height: 1.6; }
-        h1 { color: #1E88E5; }
-        h2 { color: #1565C0; margin-top: 32px; }
-        .updated { color: #757575; font-size: 14px; }
-        a { color: #1E88E5; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f5f5f5; color: #1a1a1a; line-height: 1.7; }
+        .container { max-width: 760px; margin: 0 auto; background: #ffffff; padding: 40px 32px; min-height: 100vh; }
+        .logo { font-size: 28px; font-weight: 800; color: #1a73e8; margin-bottom: 4px; }
+        .subtitle { font-size: 13px; color: #666; margin-bottom: 32px; }
+        h1 { font-size: 26px; font-weight: 800; margin-bottom: 6px; }
+        .meta { font-size: 12px; color: #888; margin-bottom: 28px; }
+        h2 { font-size: 16px; font-weight: 700; margin-top: 28px; margin-bottom: 8px; color: #1a1a1a; }
+        p { font-size: 14px; color: #333; margin-bottom: 10px; }
+        ul { margin: 8px 0 10px 20px; }
+        ul li { font-size: 14px; color: #333; margin-bottom: 4px; }
+        .badge { display: inline-block; background: #e8f0fe; color: #1a73e8; font-size: 11px; font-weight: 600; padding: 2px 10px; border-radius: 20px; margin-bottom: 20px; }
+        .divider { border: none; border-top: 1px solid #e0e0e0; margin: 24px 0; }
+        .contact-box { background: #f8f9fa; border-radius: 10px; padding: 16px 20px; margin-top: 8px; font-size: 13px; color: #444; }
+        @media (max-width: 600px) { .container { padding: 24px 16px; } h1 { font-size: 22px; } }
     </style>
 </head>
 <body>
-    <h1>Politique de Confidentialité</h1>
-    <p class="updated">Dernière mise à jour : 8 mai 2026</p>
+<div class="container">
 
-    <p>Bienvenue sur InvoiceMaker. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations lorsque vous utilisez notre application mobile.</p>
+    <div class="logo">North Invoice</div>
+    <div class="subtitle">Politique de confidentialité</div>
 
-    <h2>1. Informations que nous collectons</h2>
-    <p>InvoiceMaker stocke les données suivantes <strong>uniquement sur votre appareil</strong> :</p>
+    <h1>Politique de confidentialité</h1>
+    <div class="meta">Dernière mise à jour : mai 2026</div>
+    <div class="badge">LPRPDE (Canada) &nbsp;·&nbsp; CCPA (Californie, États-Unis)</div>
+
+    <hr class="divider">
+
+    <h2>1. Qui sommes-nous</h2>
+    <p>North Invoice est une application mobile canadienne conçue pour aider les travailleurs autonomes et les petites entreprises à gérer leurs factures, dépenses, soumissions, clients et documents comptables.</p>
+
+    <h2>2. Stockage des données</h2>
+    <p>Par défaut, toutes vos données — factures, dépenses, informations sur les clients, soumissions et reçus numérisés — sont stockées <strong>localement sur votre appareil uniquement</strong>.</p>
+    <p>Les abonnés peuvent activer de façon facultative la <strong>sauvegarde dans le nuage</strong>, qui téléverse vos données de manière sécurisée vers Google Firebase Storage. Vos données sont stockées sous un identifiant unique lié à votre compte Google et ne sont accessibles que par vous. Personne d'autre, y compris North Invoice, ne peut accéder à vos données sauvegardées.</p>
+
+    <h2>3. Sauvegarde dans le nuage &amp; connexion Google</h2>
+    <p>La sauvegarde dans le nuage est une fonctionnalité facultative disponible pour les abonnés. Pour l'utiliser, vous vous connectez avec votre compte Google. Nous collectons uniquement votre <strong>adresse courriel Google</strong>, qui sert uniquement à identifier votre espace de stockage. Nous n'accédons pas à vos contacts Google, votre calendrier ou toute autre donnée Google.</p>
+    <p>Vos fichiers de sauvegarde sont stockés sur Google Firebase (Google LLC, États-Unis) et sont régis par la <a href="https://policies.google.com/privacy" style="color:#1a73e8;">Politique de confidentialité de Google</a>. Les sauvegardes sont transmises via une connexion chiffrée (HTTPS) et uniquement en Wi-Fi.</p>
+
+    <h2>4. Informations que nous ne collectons pas</h2>
     <ul>
-        <li>Informations sur votre entreprise (nom, adresse, coordonnées)</li>
-        <li>Informations sur vos clients (nom, adresse, courriel)</li>
-        <li>Factures et devis</li>
-        <li>Dépenses et catégories</li>
-        <li>Reçus et documents numérisés</li>
-        <li>Paramètres et préférences de l'application</li>
+        <li>Nous ne collectons pas votre nom, adresse ou informations commerciales (sauf si vous choisissez d'effectuer une sauvegarde)</li>
+        <li>Nous ne collectons pas les données financières saisies dans l'application (sauf si vous choisissez d'effectuer une sauvegarde)</li>
+        <li>Nous n'utilisons pas de SDK d'analyse ou de suivi</li>
+        <li>Nous ne diffusons pas de publicités</li>
+        <li>Nous ne partageons ni ne vendons aucune donnée à des tiers</li>
     </ul>
 
-    <h2>2. Comment nous stockons vos données</h2>
-    <p>Toutes les données saisies dans InvoiceMaker sont stockées <strong>exclusivement sur votre appareil</strong> à l'aide du stockage local d'Android. Nous ne téléchargeons, ne synchronisons ni ne transmettons vos données vers aucun serveur externe ou service infonuagique.</p>
-
-    <h2>3. Accès à la caméra et au stockage</h2>
-    <p>InvoiceMaker demande l'accès à votre caméra et à votre galerie de photos uniquement dans le but de numériser des reçus et des documents. Les images sont stockées localement sur votre appareil et ne sont jamais transmises à nos serveurs.</p>
-
-    <h2>4. Partage des données</h2>
-    <p>Nous ne vendons, n'échangeons ni ne partageons vos données personnelles avec des tiers. Lorsque vous choisissez de partager une facture ou un rapport de dépenses via la fonction de partage, vous contrôlez ce qui est partagé et avec qui.</p>
-
-    <h2>5. Sécurité des données</h2>
-    <p>Vos données sont protégées par les fonctions de sécurité intégrées de votre appareil. Nous vous recommandons d'utiliser un verrouillage d'écran sur votre appareil pour protéger vos informations.</p>
+    <h2>5. Autorisations caméra &amp; stockage</h2>
+    <p>L'autorisation de caméra est utilisée uniquement pour numériser les reçus et documents. Les images sont traitées entièrement sur votre appareil à l'aide de Google ML Kit (en local — aucune donnée n'est envoyée aux serveurs de Google). Les images peuvent être incluses dans votre sauvegarde dans le nuage si vous avez activé cette fonctionnalité.</p>
 
     <h2>6. Suppression des données</h2>
-    <p>Vous pouvez supprimer vos données à tout moment en :</p>
-    <ul>
-        <li>Supprimant des factures, clients ou dépenses individuels dans l'application</li>
-        <li>Désinstallant l'application, ce qui supprime toutes les données stockées localement</li>
-    </ul>
+    <p>Vous pouvez supprimer votre sauvegarde dans le nuage à tout moment en vous déconnectant et en nous contactant à l'adresse ci-dessous. Les données locales peuvent être supprimées en désinstallant l'application. Les images de reçus sont automatiquement supprimées après 6 ans, conformément aux exigences standard de tenue de dossiers.</p>
 
-    <h2>7. Confidentialité des enfants</h2>
-    <p>InvoiceMaker n'est pas destiné aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants.</p>
+    <h2>7. Abonnements &amp; paiements</h2>
+    <p>North Invoice propose des abonnements payants optionnels traités entièrement via Google Play Billing. Nous ne collectons, traitons ni stockons aucune information de paiement ou de carte de crédit.</p>
 
-    <h2>8. Modifications de cette politique</h2>
-    <p>Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Nous vous informerons de tout changement en mettant à jour la date de « Dernière mise à jour » en haut de cette page.</p>
+    <h2>8. Protection de la vie privée des enfants</h2>
+    <p>North Invoice est destinée à un usage professionnel par des adultes. Nous ne collectons sciemment aucune information sur les enfants de moins de 13 ans.</p>
 
-    <h2>9. Nous contacter</h2>
-    <p>Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter à :</p>
-    <p><a href="mailto:privacy@invoicemaker.app">privacy@invoicemaker.app</a></p>
+    <h2>9. Modifications de cette politique</h2>
+    <p>Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Toute modification sera reflétée dans l'application avec une date de mise à jour.</p>
+
+    <h2>10. Vos droits (LPRPDE &amp; CCPA)</h2>
+    <p><strong>Utilisateurs canadiens :</strong> En vertu de la LPRPDE, vous avez le droit d'accéder à vos renseignements personnels, de les corriger ou d'en demander la suppression.</p>
+    <p><strong>Utilisateurs californiens :</strong> En vertu du CCPA, vous avez le droit de savoir quelles informations personnelles sont collectées et le droit de les supprimer. Nous ne vendons pas d'informations personnelles.</p>
+
+    <h2>11. Contact</h2>
+    <div class="contact-box">
+        <p style="margin-bottom:6px;">Pour toute question relative à la confidentialité : <a href="mailto:privacy@invoicemaker.app" style="color:#1a73e8;">privacy@invoicemaker.app</a></p>
+        <p style="margin-bottom:6px;">Utilisateurs canadiens : Nous répondons dans les 30 jours (LPRPDE).</p>
+        <p style="margin-bottom:0;">Utilisateurs californiens : Nous répondons dans les 45 jours (CCPA).</p>
+    </div>
+
+    <hr class="divider">
+    <p style="font-size:12px; color:#aaa; text-align:center;">© 2026 North Invoice · Fait au Canada 🇨🇦</p>
+
+</div>
 </body>
 </html>
